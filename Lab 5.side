@@ -1,0 +1,107 @@
+{
+  "id": "4c833e99-fa11-4dc5-9748-8dbd3a2c8bb0",
+  "version": "2.0",
+  "name": "Lab 5",
+  "url": "https://web.cecs.pdx.edu",
+  "tests": [{
+    "id": "4b01c7d7-5c36-4699-91d2-52b40d23d77b",
+    "name": "TEST A",
+    "commands": [{
+      "id": "5f0ad15f-1b0f-4df0-a130-2d8a118954d2",
+      "comment": "",
+      "command": "open",
+      "target": "/~cgi_web/F/order.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9493d559-4ae3-4655-9e4f-9a0dd5a0cc0a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1258x889",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e6d33f84-2530-4122-bae1-ba60f1e17d2a",
+      "comment": "",
+      "command": "click",
+      "target": "id=customer",
+      "targets": [
+        ["id=customer", "id"],
+        ["name=customer", "name"],
+        ["css=#customer", "css:finder"],
+        ["xpath=//input[@id='customer']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "43655697-4436-4429-99ea-402a605a0e6b",
+      "comment": "NAME",
+      "command": "type",
+      "target": "id=customer",
+      "targets": [],
+      "value": "Hayden\\n"
+    }, {
+      "id": "2bf7e617-bc54-453b-9d34-6e53517870a4",
+      "comment": "",
+      "command": "type",
+      "target": "id=sandwich",
+      "targets": [
+        ["id=sandwich", "id"],
+        ["name=sandwich", "name"],
+        ["css=#sandwich", "css:finder"],
+        ["xpath=//input[@id='sandwich']", "xpath:attributes"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "BLT"
+    }, {
+      "id": "6b8e53c0-96dd-4b36-99ec-afec8ebf0a4d",
+      "comment": "",
+      "command": "type",
+      "target": "id=sides",
+      "targets": [
+        ["id=sides", "id"],
+        ["name=sides", "name"],
+        ["css=#sides", "css:finder"],
+        ["xpath=//input[@id='sides']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "Chips"
+    }, {
+      "id": "413a0d1c-792c-4f06-a2b7-db91423502cb",
+      "comment": "",
+      "command": "type",
+      "target": "id=drinks",
+      "targets": [
+        ["id=drinks", "id"],
+        ["name=drinks", "name"],
+        ["css=#drinks", "css:finder"],
+        ["xpath=//input[@id='drinks']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "Coke"
+    }, {
+      "id": "997de32b-23ef-410c-a433-0b7630729f17",
+      "comment": "OK",
+      "command": "verifyValue",
+      "target": "id=customer",
+      "targets": [
+        ["id=customer", "id"],
+        ["name=customer", "name"],
+        ["css=#customer", "css:finder"],
+        ["xpath=//input[@id='customer']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Hayden"
+    }]
+  }],
+  "suites": [{
+    "id": "0db1c784-d739-409c-9396-d7e2278f4ec7",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["4b01c7d7-5c36-4699-91d2-52b40d23d77b"]
+  }],
+  "urls": ["https://web.cecs.pdx.edu/"],
+  "plugins": []
+}
